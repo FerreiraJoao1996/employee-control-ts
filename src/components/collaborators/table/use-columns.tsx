@@ -1,32 +1,28 @@
-import DeleteIcon from "@mui/icons-material/Delete";
-import EditIcon from "@mui/icons-material/Edit";
-import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
-import { Box } from "@mui/material";
 import { GridColDef } from "@mui/x-data-grid";
 
-import { useCollaboratorStore } from "../store";
-import { toast } from "react-toastify";
+// import { useCollaboratorStore } from "../store";
+// import { toast } from "react-toastify";
 
 export const useColumns = (): GridColDef[] => {
-	const { openDrawer, setCollaboratorId, openModalCollaborator } = useCollaboratorStore();
+	// const { openDrawer, setCollaboratorId, openModalCollaborator } = useCollaboratorStore();
 
-	const openEditDrawer = (id: number) => {
-		setCollaboratorId(id);
-		openDrawer();
-	};
+	// const openEditDrawer = (id: number) => {
+	// 	setCollaboratorId(id);
+	// 	openDrawer();
+	// };
 
-	const handleViewModal = (id: number) => {
-		setCollaboratorId(id);
-		openModalCollaborator();
-	};
+	// const handleViewModal = (id: number) => {
+	// 	setCollaboratorId(id);
+	// 	openModalCollaborator();
+	// };
 
-	const handleDelete = (id: any, name: any) => {
-		if (!id || !name) {
-			toast.error("genericError");
+	// const handleDelete = (id: any, name: any) => {
+	// 	if (!id || !name) {
+	// 		toast.error("genericError");
 
-			return;
-		}
-	};
+	// 		return;
+	// 	}
+	// };
 
 	return [
 		{

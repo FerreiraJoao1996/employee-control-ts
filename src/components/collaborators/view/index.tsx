@@ -1,14 +1,8 @@
-import { Box, Button, Container, Skeleton, Typography } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { useCollaboratorStore } from "../store";
 
 const View = () => {
 	const { closeModalCollaborator } = useCollaboratorStore();
-
-	const collaborator = null;
-
-	// if (isLoading) {
-	// 	return <Skeleton variant={"rectangular"} width={600} height={400} />;
-	// }
 
 	return (
 		<Box>

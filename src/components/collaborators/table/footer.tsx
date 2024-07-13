@@ -1,15 +1,15 @@
-import { Box, Typography } from "@mui/material";
-import {
-	gridPaginationRowRangeSelector,
-	gridRowCountSelector,
-	useGridApiContext,
-	useGridSelector
-} from "@mui/x-data-grid";
+import { Box} from "@mui/material";
+// import {
+// 	gridPaginationRowRangeSelector,
+// 	gridRowCountSelector,
+// 	useGridApiContext,
+// 	useGridSelector
+// } from "@mui/x-data-grid";
 
 const Footer = () => {
-	const apiRef = useGridApiContext();
-	const rowCount = useGridSelector(apiRef, gridRowCountSelector);
-	const rowRange = useGridSelector(apiRef, gridPaginationRowRangeSelector);
+	// const apiRef = useGridApiContext();
+	// const rowCount = useGridSelector(apiRef, gridRowCountSelector);
+	// const rowRange = useGridSelector(apiRef, gridPaginationRowRangeSelector);
 
 	return (
 		<Box
