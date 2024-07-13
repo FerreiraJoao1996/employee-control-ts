@@ -2,12 +2,30 @@ import { FormProvider, useForm } from "react-hook-form";
 import View from ".";
 import { NewCollaborator } from "../../dto/new-collaborator";
 
-interface Props {
-	defaultValues: NewCollaborator;
-}
-
-const Logic = (props: Props) => {
-	const { defaultValues } = props;
+const Logic = () => {
+	const defaultValues: NewCollaborator = {
+        name: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        cellphone: "",
+        birthday: "",
+        cep: "",
+        adress: "",
+        district: "",
+        number: "",
+        state: "",
+        country: "",
+        role: "",
+        user: "",
+        password: "",
+        confirmPassword: "",
+        cpf: "",
+        rg: "",
+        ctps: "",
+        voterTitle: "",
+        proofEducation: ""
+    };
 
 	const form = useForm<NewCollaborator>({
 		defaultValues

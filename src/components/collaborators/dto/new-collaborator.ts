@@ -20,13 +20,13 @@ export interface NewCollaborator {
     ctps: string;
     voterTitle: string;
     proofEducation: File |string;
-    birthCertificate?: File | string; // Solteiro
-    weddingCertificate?: File |string;  // Casado
-    certificadoAlistamentoMilitar?: File |string;  // Para homens entre 18 e 45 anos
-    atestadoSaudeOcupacional?: File |string;
-    certidaoNascimentoFilhos?: File[] |string[]; // Certidões de nascimento dos filhos até 21 anos
-    cartaoVacinacaoFilhos?: File[] |string[]; // Cartões de vacinação dos filhos menores de 7 anos
-    comprovanteFrequenciaEscolarFilhos?: File[] |string[]; // Comprovantes de frequência escolar dos filhos maiores de 7 anos
+    birthCertificate?: File | string; // Single
+    weddingCertificate?: File |string;  // Married
+    militaryEnlistmentCertificate?: File | string;  // For men between 18 and 45 years old
+    occupationalHealthCertificate?: File | string;
+    childrenBirthCertificates?: File[] | string[];  // Birth certificates of children up to 21 years old
+    childrenVaccinationCards?: File[] | string[];  // Vaccination cards of children under 7 years old
+    childrenSchoolAttendanceProofs?: File[] | string[];  // School attendance proofs of children older than 7 years old
   }
   
   
